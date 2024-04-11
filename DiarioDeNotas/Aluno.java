@@ -5,26 +5,26 @@ public class Aluno {
     int idade;
     int ra;
     String nome;
-    String email;
+    String mail;
     int telefone;
 
-    public void identificarAluno() {
+    public void identificarAluno(){
 
         Scanner sc = new Scanner(System.in);
+            System.out.println("Digite seu nome: ");
+            nome = sc.nextLine();
+            System.out.println("Digite seu RA: ");
+            ra = sc.nextInt();
+            System.out.println("Digite sua idade: ");
+            idade = sc.nextInt();
+            System.out.println("Digite seu email: ");
+            mail = sc.next();
+            System.out.println("Digite seu telefone: ");
+            telefone = sc.nextInt();
+            System.out.println("Seja bem vindo " + nome);
 
-        System.out.println("Digite seu nome: ");
-        nome = sc.nextLine();
-        System.out.println("Digite seu RA: ");
-        ra = sc.nextInt();
-        System.out.println("Digite sua idade: ");
-        idade = sc.nextInt();
-        System.out.println("Digite seu email: ");
-        email = sc.nextLine();
-        System.out.println("Digite seu telefone: ");
-        telefone = sc.nextInt();
-        System.out.println("Seja bem vindo " + nome);
-
-        sc.close();
+            sc.close();
+        
 
     }
 
@@ -40,12 +40,13 @@ public class Aluno {
         return nome;
     }
 
-    public int Telefone() {
-        return telefone;
-    }
-
     public String Email() {
         return email;
     }
 
+    public int Telefone() {
+        return telefone;
+    }
+
+    
 }
